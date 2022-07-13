@@ -139,16 +139,16 @@ h1 {
 
 /*sticky phone number */
 .stickyFont {
-  background-color: yellow;
-  height: 25px;
+  height: 35px;
   text-align: center;
   font-weight: bold;
   color: black;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 5px;
 }
 
-.container {
+.containerMeal {
   display: flex;
   overflow: hidden;
   margin: 0 1em 0 1em;
@@ -176,7 +176,7 @@ h1 {
 
 .meal i {
   font-size: 13px;
-  margin-left: 10em;
+ padding-left: 10px;
   display: inline;
   font-weight: 100;
   color: #333333;
@@ -200,7 +200,7 @@ h1 {
   font-family: Spinnaker;
 }
 
-.container div {
+.containerMeal div {
   font-size: 20px;
   font-weight: 300;
   display: inline;
@@ -228,12 +228,12 @@ h1 {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 99;
+  z-index: 2000;
   border: none;
-}
-
-.myBtn:hover {
-  background-color: #555;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 

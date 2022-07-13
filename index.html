@@ -40,6 +40,17 @@
                 }
             }
         }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('dropdown')
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
 
     </script>
 </head>
@@ -47,7 +58,7 @@
 <body id="page">
     <div class="wrapper">
 
-        <nav class="sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
+        <nav class="sticky-top navbar-expand-lg navbar navbar-dark bg-success">
             <h1 class="navbar-brand" href="#">Pedagogen Sushi</h1>
             <button class="navbar-toggler location fixed" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -89,86 +100,86 @@
             <hr>
             <!-- every single meal -->
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>7 bittar</div>
                     <div>85kr</div>
                 </div>
                 <i class="subtitleMeal">(lax,&nbsp;krabbfisk,&nbsp;räka,&nbsp;4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>10 bittar</div>
                     <div>95kr</div>
                 </div>
                 <i class="subtitleMeal">(räka,&nbsp;krabbfisk,&nbsp;avokado,&nbsp;3 lax,&nbsp;4rullar)</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Veg 10bitar</div>
                     <div>95kr</div>
                 </div>
                 <i class="subtitleMeal">(2 tofu,&nbsp;omelett,&nbsp;2 avokado,&nbsp;minimajs,&nbsp;4rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>12 bitar</div>
                     <div>105kr</div>
                 </div>
                 <i>(räka,&nbsp;krabbfisk,&nbsp;vitfisk,&nbsp;avokado,&nbsp;4 lax,&nbsp;4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Bentorullar 7 bittar</div>
                     <div>85kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Bentorullar 10 bittar</div>
                     <div>100kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Bentorullar 12 bittar</div>
                     <div>110kr</div>
                 </div>
 
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakitori</div>
                     <div>90kr</div>
                 </div>
                 <i>(4 kycklingspett,&nbsp;soja-eller sataysås,&nbsp;ris,&nbsp;sallad)</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakitori Bento</div>
                     <div>95kr</div>
                 </div>
                 <i>(2 kycklingspett,&nbsp;soja-eller sataysås,&nbsp;ris,&nbsp;sallad,&nbsp;3 lax,&nbsp;1</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kyckling med Currysås</div>
                     <div>105kr</div>
                 </div>
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakiniku </div>
                     <div>100kr</div>
                 </div>
                 <i>(Marinerad biff i tunna skivor, ris, sallad)</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakiniku Bento</div>
                     <div>110kr</div>
                 </div>
                 <i>(Marinerad biff, nis, sallad, 3 lax, 1 makirulle)</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yaki Bento</div>
                     <div>105kr</div>
                 </div>
                 <i>(Marinerad biff, 2kycklingspett, sås, ns, sallad)</i>
                 <br />
 
-                <div class="container">
+                <div class="containerMeal">
                     <div id="VARMRÄTTER">Sashimi</div>
                     <div>105kr</div>
                 </div>
@@ -180,41 +191,41 @@
             <h1 class="headLine" style="margin:0px 00px 0px 20px ;">VARMRÄTTER 熟 食</h1>
             <hr>
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakitori </div>
                     <div>95kr</div>
                 </div>
                 <i>(4 kycklingspett, soja-/sataysås, ris, sallad)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakitori Bento</div>
                     <div>100kr</div>
                 </div>
                 <i>(2 kycklingspett, soja-/sataysås, ris, sallad, 3 lax, och, 1 makirulle)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kyckling med Currysås</div>
                     <div>110kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakiniku</div>
                     <div>105kr</div>
                 </div>
                 <i>(Marinerad biff i tunna skivor, ris, sallad)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Yakiniku Bento</div>
                     <div>115kr</div>
                 </div>
                 <i>(Marinerad biff, ris, sallad, 3 lax, 1 makirulle)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Tempura</div>
                     <div>120kr</div>
                 </div>
                 <i>(Fniterade räkor, ris, sallad)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div id="Risrullar">Tempura Bento</div>
                     <div>130kr</div>
                 </div>
@@ -227,53 +238,53 @@
             <h1 class="headLine" style="margin:0px 00px 0px 20px ;">Maki-/ Risrullar 太 卷</h1>
             <hr>
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>Lax makirulle(10 bitar)</div>
                     <div>105kr</div>
                 </div>
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>krabbfisk insideoutrulle(10 bitar)</div>
                     <div>105kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Veg. maki-/insideoutrulle(10 bitar)</div>
                     <div>105kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Rainbowrulle</div>
                     <div>120kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kärlek av laxrulle</div>
                     <div>155kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kärlek av laxrulle</div>
                     <div>155kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kärlek av avokadorulle(10 bitar)</div>
                     <div>130kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Cinderellarulle(10 bitar)</div>
                     <div>120kr</div>
                 </div>
 
-                <div class="container">
+                <div class="containerMeal">
                     <div>Philadelphiarulle(10 bitar)</div>
                     <div>155kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Bentorullar 8 bittar</div>
                     <div>95kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Bentorullar 10 bittar</div>
                     <div>105kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div id="nigiri">Bentorullar 12 bittar</div>
                     <div>115kr</div>
                 </div>
@@ -286,48 +297,48 @@
             <h1 class="headLine" style="margin:0px 00px 0px 20px ;">NIGIRI 寿 司</h1>
             <hr>
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>krabbfisk</div>
                     <div>13 kr/st.</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Lax</div>
                     <div>15 kr/st.</div>
                 </div>
-                <div class="container">
-                    <div>vitfisk</div>
+                <div class="containerMeal">
+                    <div>Vitfisk</div>
                     <div>15 kr/st.</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Ebiräkor</div>
                     <div>14 kr/st.</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Tonfisk</div>
                     <div>18 kr/st.</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Kärlek av lax</div>
                     <div>50 kr/2st.</div>
                 </div>
-                <div class="container">
-                    <div>Vegetarisk</div>
+                <div class="containerMeal">
+                    <div style="color: #28a327;">Vegetarisk</div>
                     <div></div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Tofu</div>
                     <div>14 kr/st.</div>
                 </div>
-                <div class="container">
-                    <div>omelett</div>
+                <div class="containerMeal">
+                    <div>Omelett</div>
                     <div>12 kr/st.</div>
                 </div>
-                <div class="container">
-                    <div>minimajs</div>
+                <div class="containerMeal">
+                    <div>Minimajs</div>
                     <div>12 kr/st.</div>
                 </div>
-                <div class="container">
-                    <div id="mix">avokado</div>
+                <div class="containerMeal">
+                    <div id="mix">Avokado</div>
                     <div>14 kr/st.</div>
                 </div>
             </div>
@@ -337,61 +348,61 @@
             <h1 class="headLine" style="margin:0px 00px 0px 20px ;">Sushi Mix 拼 盘</h1>
             <hr>
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>Ninja 8 bitar</div>
                     <div>90kr</div>
                 </div>
                 <i>(2 lax, krabbfisk, räka, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Veg 8 bitar</div>
                     <div>90kr</div>
                 </div>
 
                 <i>(omelett, tofu, avokado, minimajs, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Samurai 10 bitar</div>
                     <div>105kr</div>
                 </div>
                 <i>(3 lax, krabbfisk, räka, avokado, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Veg 10 bitar</div>
                     <div>105kr</div>
                 </div>
                 <i>(2 tofu, omelett, 2 avokado, minimajs, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Fuji 12 bitar</div>
                     <div>115kr</div>
                 </div>
                 <i>(4 lax, krabbfisk, räka, avokado, vitfisk, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Shogun 16 bitar</div>
                     <div>170kr</div>
                 </div>
                 <i>(5 lax, krabbfisk, omelett, räka, minimajs, vitfisk, 2 avokado, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Sapporo 20 bitar</div>
                     <div>190kr</div>
                 </div>
 
                 <i>(6 lax, 2 krabbfisk, 2 räkor, 2 avokado, vitfisk, omelett, minimajs, tonfisk, 4 rullar)</i>
                 <br />
-                <div class="container">
+                <div class="containerMeal">
                     <div>Sumo 30 bitar</div>
                     <div>130kr</div>
                 </div>
                 <i>(8 lax, 2 krabbfisk, 2 räkor, 2 tofu, 2 minimajs, 1 tonfisk, 2 omelett, 2 avokado, 2 clams, 1
                     mussla, 6 rullar)</i>
                 <br />
-                <p style="margin-left: 10em;margin-top:15px ; margin-bottom: 0px;">Byte mot tonfisk 7 kr extra/st</p>
-                <p style="margin-left: 10em;margin-bottom:0px ;" id="ÖVRIG">Byte av risrulle mot nigiri 5 kr extra/st
+                <p style="padding-left: 10px;margin-top:15px ; margin-bottom: 0px;">Byte mot tonfisk 7 kr extra/st</p>
+                <p style="padding-left: 10px;margin-bottom:0px ;" id="ÖVRIG">Byte av risrulle mot nigiri 5 kr extra/st
                 </p>
-                <p style="margin-left: 10em;margin-bottom:0px ;">Extra soja 5kr(avhämtning)</p>
+                <p style="padding-left: 10px;margin-bottom:0px ;">Extra soja 5kr(avhämtning)</p>
 
                 <i onclick="topFunction()" class="myBtn" title="Go to top"><img src="img/scrollUp.png" alt=""
                         style="height: 30px;"></i>
@@ -403,19 +414,19 @@
             <h1 class="headLine" style="margin:0px 00px 0px 20px ;">ÖVRIG 前 餐</h1>
             <hr>
             <div class="meal">
-                <div class="container">
+                <div class="containerMeal">
                     <div>Sjögrässallad</div>
                     <div>15kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Misosoppa</div>
                     <div>10kr(avh.)</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Japansk dumpling 10 st.</div>
                     <div>105kr</div>
                 </div>
-                <div class="container">
+                <div class="containerMeal">
                     <div>Sashimi</div>
                     <div>110kr</div>
                 </div>
@@ -425,7 +436,7 @@
             </div>
         </div>
 
-        <div class="fixed-bottom stickyFont">Ring oss +46 793578305</div>
+        <div class="fixed-bottom stickyFont bg-warning">Ring oss! 0762608398</div>
 
     </div>
 
@@ -435,22 +446,20 @@
         <div class="footerContainer container-fixed">
             <div>
                 <span><span class="footerTitile">Adress</span><br />
-                    Ching Palace<br />
-                    Södra Hamngatan 2
-                    411 06 Göteborg</span>
+                Sushi Pedagogen Park<br />
+                    Bifrostgatan 38
+                    431 44 Göteborg</span>
             </div>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2129.9607716047053!2d12.036051251861398!3d57.73410868103677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff440e8ad9f45%3A0x41bb0bfb0a09b0b!2sIngrid%20Wallbergs%20g%2C%20415%2028%20G%C3%B6teborg!5e0!3m2!1sen!2sse!4v1657716438805!5m2!1sen!2sse"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8539.118790968338!2d11.9873149!3d57.6522318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba17a086d4d9c85!2sSushi%20Pedagogen%20Park%20-%20Sushi%20M%C3%B6lndal!5e0!3m2!1sen!2sse!4v1657743610245!5m2!1sen!2sse"
+                width="300px" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <div class="itemMargin">
                 <span>
                     <span class="footerTitile">Kontakta oss</span><br />
-                    <a href="tel:031158086">031-15 80 86</a><br />
-                    <span class="footerTitile">E-post</span><br />
-                    <a href="mailto:wyibo00@outlook.com">wyibo00@outlook.com</a>
-                </span>
+                    <a href="tel:0762608398">076-260 83 98</a><br />
+    
             </div>
             <div>
                 <p class="footerTitile itemMargin">Öppettider</p>
