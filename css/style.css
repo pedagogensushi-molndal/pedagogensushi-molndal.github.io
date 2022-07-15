@@ -5,9 +5,10 @@
 
 
 
-body{
-  overflow-x: hidden ;
+body {
+  overflow-x: hidden;
 }
+
 /*wrapper */
 .wrapper {
   background-color: #fff;
@@ -18,9 +19,10 @@ body{
 }
 
 
-#color{
+#color {
   font-family: Patua One;
 }
+
 .navbar-brand {
   color: #f6f6f6 !important;
   font-family: Patua One !important;
@@ -32,6 +34,7 @@ body{
   color: #f6f6f6 !important;
 
 }
+
 /*nav */
 #nav li {
   text-decoration: none;
@@ -121,7 +124,8 @@ h1 {
   outline: none !important;
   box-shadow: none !important;
 }
-.bg-color{
+
+.bg-color {
   background-color: #719c27 !important;
 }
 
@@ -164,6 +168,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 .stickyFont a {
   color: white;
 
@@ -172,6 +177,7 @@ h1 {
 .stickyFont a:hover {
   color: white !important;
 }
+
 .containerMeal {
   display: flex;
   overflow: hidden;
@@ -198,12 +204,14 @@ h1 {
   color: rgb(0, 0, 0);
 }
 
-.meal i {
+.subtitleMeal {
   font-size: 13px;
- margin-left: 20px;
-  display: block  !important;
+  margin-left: 20px;
+  margin-top: 0px !important;
+  display: block !important;
   font-weight: 100;
   color: #333333;
+  font-style: italic;
 }
 
 .main {
@@ -233,8 +241,9 @@ h1 {
 
 
 
-.lineheight div{
-margin-bottom: 10px;}
+.lineheight div {
+  margin-top: 10px;
+}
 
 .bg-color {
   background-color: rgba(238, 238, 238, 0.639)
