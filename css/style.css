@@ -233,10 +233,8 @@ h1 {
 
 
 
-.right {
-  float: right;
-  margin-right: 10px;
-
+.lineheight div{
+  line-height: 2em;
 }
 
 .bg-color {
