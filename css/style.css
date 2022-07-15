@@ -151,17 +151,21 @@ h1 {
   position: fixed;
 }
 
-
+.textCenter {
+  display: flex;
+  align-items: center;
+  color: white;
+}
 
 /*sticky phone number */
 .stickyFont {
   height: 50px;
-  text-align: center;
   font-weight: bold;
   color: white;
   width: 100%;
-  margin: auto;
-  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .stickyFont a {
   color: white;
