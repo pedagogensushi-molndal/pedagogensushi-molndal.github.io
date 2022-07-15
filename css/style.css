@@ -234,8 +234,7 @@ h1 {
 
 
 .lineheight div{
-  line-height: 2em;
-}
+margin-bottom: 10px;}
 
 .bg-color {
   background-color: rgba(238, 238, 238, 0.639)
