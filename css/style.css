@@ -59,8 +59,6 @@ text-decoration: none;
 .navbar-nav li {
   text-decoration: none;
   list-style: none;
-  float: left;
-  display: block;
   margin-inline-start: 12px;
   margin-inline-end: 12px;
   font-size: 13px;
@@ -106,6 +104,10 @@ nav a:hover::before {
   transform: scale(1);
   text-decoration:underline !important ;
   text-decoration-color:#4b4a4a ;
+}
+.nav-link{
+  display: inline-block !important;
+
 }
 
 h1 {
