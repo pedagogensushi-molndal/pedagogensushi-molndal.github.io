@@ -62,11 +62,11 @@ text-decoration: none;
   float: left;
   display: block;
   margin-inline-start: 12px;
-  margin-inline-end: 0px;
+  margin-inline-end: 12px;
   font-size: 13px;
   font-family: Spinnaker !important;
   padding-left: 20px;
-
+  padding-right: 20px;
 }
 
 nav a {
@@ -90,6 +90,8 @@ nav a::before {
   height: 100%;
   border-radius: 5px;
   background-color: white;
+  margin-inline-end: 12px;
+
   content: '';
   opacity: 0;
   -webkit-transition: -webkit-transform 0.4s, opacity 0.3s;
@@ -102,6 +104,8 @@ nav a:hover::before {
   opacity: 0.5;
   -webkit-transform: scale(1);
   transform: scale(1);
+  text-decoration:underline !important ;
+  text-decoration-color:#4b4a4a ;
 }
 
 h1 {
@@ -167,6 +171,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Spinnaker;
+
 }
 
 .stickyFont a {
@@ -181,7 +187,6 @@ h1 {
 .containerMeal {
   display: flex;
   overflow: hidden;
-  margin: 0 1em 0 1em;
   font-size: 20px;
   justify-content: space-between;
 }
@@ -202,11 +207,12 @@ h1 {
 .meal {
   font-family: Spinnaker;
   color: rgb(0, 0, 0);
+  margin: 0 20px 0 20px;
+
 }
 
 .subtitleMeal {
   font-size: 13px;
-  margin-left: 20px;
   margin-top: 0px !important;
   display: block !important;
   font-weight: 100;
