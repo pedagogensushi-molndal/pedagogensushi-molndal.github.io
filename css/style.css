@@ -331,10 +331,8 @@ h1 {
 
 .container1 {
   display: flex;
-  gap: 12em;
-  width: 350px;
   justify-content: space-between;
-
+  width: 100%;
 }
 
 .fixed-top1 {
@@ -351,4 +349,13 @@ h1 {
   width: 100%;
   /* The width is the width of the web page */
   margin: 0 5px;
+}
+
+.openTime {
+  max-width: 90vw;
+}
+@media only screen and (min-device-width: 768px){
+ .openTime {
+  max-width: 35vw;
+} 
 }
